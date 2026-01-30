@@ -103,8 +103,11 @@ image.png</div></div>
     <ul>
 <li>Material Domain : PostProcess</li>
 </ul>
-<p><img src="image%201.png" alt="image.png" class="inline"/></p>
-<ul>
+<div class="image">
+<img src="image1.png" alt=""/>
+<div class="caption">
+image.png</div></div>
+    <ul>
 <li><b>SmokeTexture</b>: Create a <b>SceneTexture</b> node → Scene Texture ID: <b>[PostProcessInput0]</b></li>
 <li><b>SmokeLocalPosAlphaTexture (LocalPos(x,y,z), Alpha)</b>: Create a <b>SceneTexture</b> node → Scene Texture ID: <b>[PostProcessInput1]</b></li>
 <li><b>SmokeWorldPosDepthTexture (WorldPos(x,y,z), Depth)</b>: Create a <b>SceneTexture</b> node → Scene Texture ID: <b>[PostProcessInput4]</b></li>
@@ -112,10 +115,15 @@ image.png</div></div>
 </ul>
 <hr  />
 <h1 class="doxsection"><a class="anchor" id="autotoc_md42"></a>
-ProjectSetting Rendering</h1>
-<p><img src="image%202.png" alt="image.png" class="inline"/></p>
+Visual Material Preset</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md43"></a>
+Create</h2>
+<p><img src="IVSmoke_DataAsset.png" alt="" class="inline" title="image.png"/>    </p>
+<p><img src="IVSmoke_DataAsset_VisualMaterialPreset.png" alt="" class="inline" title="image.png"/>    </p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md44"></a>
+Configuration</h2>
+<p><img src="image2.png" alt="" class="inline" title="image.png"/>    </p>
 <ul>
-<li><b>Render Pass</b>: Information about render order (not covered in detail on this page)</li>
 <li><b>Smoke Visual Material</b>: User-custom smoke material slot<ul>
 <li>If empty, the system returns <b>SmokeTexture</b> as-is</li>
 </ul>
@@ -132,12 +140,23 @@ ProjectSetting Rendering</h1>
 <div class="line">{</div>
 <div class="line">    SmokeAlpha = max(0.0, (SmokeMask - LowOpacityRemapThreshold * 0.5f) * 2.0);</div>
 <div class="line">}</div>
-</div><!-- fragment --><hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md44"></a>
+</div><!-- fragment --> <hr  />
+ <h1 class="doxsection"><a class="anchor" id="autotoc_md46"></a>
+Project Setting Visual Material Preset</h1>
+<p><img src="IVSmoke_ProjectSetting_VisualMaterialPreset.png" alt="" class="inline" title="image.png"/>    </p>
+<ul>
+<li><b>Search project setting for <a class="el" href="class_i_v_smoke.html">IVSmoke</a></b> </li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md47"></a>
+- <b>In the Rendering section, insert it into the Smoke Visual Material Preset slot.</b></h1>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md48"></a>
 Example</h1>
-<p><b>Demo Material Path</b> : Plugins → <a class="el" href="class_i_v_smoke.html">IVSmoke</a> → Materials → M_IVSmoke_BasicVisual</p>
-<p><img src="image%203.png" alt="image.png" class="inline"/></p>
-<p><a href="IVSmoke_Option_Material.mp4">IVSmoke_Option_Material.mp4</a></p>
+<p><b>Demo Material Path</b> : Plugins → <a class="el" href="class_i_v_smoke.html">IVSmoke</a> → DataAssets → D_IVSmoke_VisualMaterialPreset</p>
+<div class="image">
+<img src="image3.png" alt=""/>
+<div class="caption">
+image.png</div></div>
+    <p><a href="IVSmoke_Option_Material.mp4">IVSmoke_Option_Material.mp4</a></p>
 <hr  />
 <p><em>Copyright (c) 2026, Team SDB. All rights reserved.</em> </p>
 </div></div><!-- contents -->
