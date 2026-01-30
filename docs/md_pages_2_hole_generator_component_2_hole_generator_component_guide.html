@@ -184,8 +184,11 @@ HoleGeneratorComponent_image6.png</div></div>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md130"></a>
 Case A. Request Penetration Hole</h2>
-<p><img src="HoleGeneratorComponent_image7.png" alt="HoleGeneratorComponent_image7.png" class="inline"/></p>
-<p>This node is used to simulate the trajectories of high-speed projectiles that pierce through smoke in a straight line, such as bullets or railgun rounds.</p>
+<div class="image">
+<img src="HoleGeneratorComponent_image7.png" alt=""/>
+<div class="caption">
+HoleGeneratorComponent_image7.png</div></div>
+    <p>This node is used to simulate the trajectories of high-speed projectiles that pierce through smoke in a straight line, such as bullets or railgun rounds.</p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md131"></a>
 <b>Execution Timing</b></h2>
 <p>Trigger this node when physical detection is confirmed—specifically during events such as <b>Hit</b>, <b>Overlap</b>, or <b>Destruction</b> of the projectile object.</p>
@@ -205,8 +208,11 @@ Case A. Request Penetration Hole</h2>
 </table>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md132"></a>
 Case B. Request Explosion Hole</h2>
-<p><img src="HoleGeneratorComponent_image8.png" alt="HoleGeneratorComponent_image8.png" class="inline"/></p>
-<p>This node is used to simulate <b>spherical (radial) void areas</b> in smoke, typically caused by explosive devices like grenades, C4, or artillery shells.</p>
+<div class="image">
+<img src="HoleGeneratorComponent_image8.png" alt=""/>
+<div class="caption">
+HoleGeneratorComponent_image8.png</div></div>
+    <p>This node is used to simulate <b>spherical (radial) void areas</b> in smoke, typically caused by explosive devices like grenades, C4, or artillery shells.</p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md133"></a>
 <b>Execution Timing</b></h2>
 <p>Trigger this node at the moment the explosion is finalized. This is usually during events such as <b>Hit (OnComponentHit)</b>, <b>Overlap (OnComponentBeginOverlap)</b>, or when the projectile actor is <b>Destroyed</b>.</p>
@@ -224,8 +230,11 @@ Case B. Request Explosion Hole</h2>
 </table>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md134"></a>
 Case C. Request Dynamic Hole</h2>
-<p><img src="HoleGeneratorComponent_image9.png" alt="HoleGeneratorComponent_image9.png" class="inline"/></p>
-<p>Use this node when you need to <b>dynamically clear smoke or maintain a hole in real-time</b> based on the movement path of an object, such as a character or a vehicle.</p>
+<div class="image">
+<img src="HoleGeneratorComponent_image9.png" alt=""/>
+<div class="caption">
+HoleGeneratorComponent_image9.png</div></div>
+    <p>Use this node when you need to <b>dynamically clear smoke or maintain a hole in real-time</b> based on the movement path of an object, such as a character or a vehicle.</p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md135"></a>
 <b>Execution Timing</b></h2>
 <p>This node should be triggered by the <b><span class="tt">OnComponentBeginOverlap</span></b> event from the actor's <span class="tt">CollisionComponent</span>. Once triggered, the system will automatically track the actor and manage the smoke interaction.</p>
