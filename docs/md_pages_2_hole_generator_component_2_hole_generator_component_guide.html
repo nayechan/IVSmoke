@@ -95,9 +95,9 @@ $(function(){initNavTree('md_pages_2_hole_generator_component_2_hole_generator_c
 <h1 class="doxsection"><a class="anchor" id="autotoc_md120"></a>
 Explosion (Grenade)</h1>
 <div class="image">
-<img src="image.png" alt=""/>
+<img src="HoleGeneratorComponent_image.png" alt=""/>
 <div class="caption">
-image.png</div></div>
+HoleGeneratorComponent_image.png</div></div>
     <ul>
 <li><b>HoleType</b>: Type of hole</li>
 <li><b>Radius</b>: Hole size</li>
@@ -121,9 +121,9 @@ image.png</div></div>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md122"></a>
 Penetration (Bullet)</h1>
 <div class="image">
-<img src="image1.png" alt=""/>
+<img src="HoleGeneratorComponent_image1.png" alt=""/>
 <div class="caption">
-image1.png</div></div>
+HoleGeneratorComponent_image1.png</div></div>
     <ul>
 <li><b>HoleType</b>: Type of hole</li>
 <li><b>Radius</b>: Hole size at the initial collision point with the smoke</li>
@@ -138,26 +138,29 @@ image1.png</div></div>
 <hr  />
 <hr  />
 <div class="image">
-<img src="image2.png" alt=""/>
+<img src="HoleGeneratorComponent_image2.png" alt=""/>
 <div class="caption">
-image2.png</div></div>
+HoleGeneratorComponent_image2.png</div></div>
     <p>Demo preset path : Plugins → <a class="el" href="class_i_v_smoke.html">IVSmoke</a> → DataAssets</p>
 <p><b>To create a new Preset, follow these steps</b></p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md125"></a>
 Create</h1>
 <p>Content Drawer → Right-click → Miscellaneous → Data Asset → Select [<a class="el" href="class_i_v_smoke.html">IVSmoke</a> Hole Preset]</p>
-<p><img src="image%3.png" alt="image3.png" class="inline"/></p>
 <div class="image">
-<img src="image4.png" alt=""/>
+<img src="HoleGeneratorComponent_image3.png" alt=""/>
 <div class="caption">
-image4.png</div></div>
+HoleGeneratorComponent_image3.png</div></div>
+    <div class="image">
+<img src="HoleGeneratorComponent_image4.png" alt=""/>
+<div class="caption">
+HoleGeneratorComponent_image4.png</div></div>
     <hr  />
 <h1 class="doxsection"><a class="anchor" id="autotoc_md127"></a>
 Usage</h1>
 <div class="image">
-<img src="image5.png" alt=""/>
+<img src="HoleGeneratorComponent_image5.png" alt=""/>
 <div class="caption">
-image5.png</div></div>
+HoleGeneratorComponent_image5.png</div></div>
     <h2 class="doxsection"><a class="anchor" id="autotoc_md128"></a>
 <b>Selecting the Right Interaction Node</b></h2>
 <blockquote class="doxtable">
@@ -171,9 +174,9 @@ image5.png</div></div>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md129"></a>
 Before. Add UIVSmokeHoleRequestComponent</h2>
 <div class="image">
-<img src="image6.png" alt=""/>
+<img src="HoleGeneratorComponent_image6.png" alt=""/>
 <div class="caption">
-image6.png</div></div>
+HoleGeneratorComponent_image6.png</div></div>
     <p>Before utilizing any Request Nodes, ensure that the <b><span class="tt">UIVSmokeHoleRequestComponent</span></b> has been added to the subject Character or Pawn class actor.</p>
 <ul>
 <li><b>Role:</b> This component facilitates the interaction queries between the actor and the smoke volume.</li>
@@ -181,11 +184,8 @@ image6.png</div></div>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md130"></a>
 Case A. Request Penetration Hole</h2>
-<div class="image">
-<img src="image7.png" alt=""/>
-<div class="caption">
-image7.png</div></div>
-    <p>This node is used to simulate the trajectories of high-speed projectiles that pierce through smoke in a straight line, such as bullets or railgun rounds.</p>
+<p><img src="HoleGeneratorComponent_image7.png" alt="HoleGeneratorComponent_image7.png" class="inline"/></p>
+<p>This node is used to simulate the trajectories of high-speed projectiles that pierce through smoke in a straight line, such as bullets or railgun rounds.</p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md131"></a>
 <b>Execution Timing</b></h2>
 <p>Trigger this node when physical detection is confirmed—specifically during events such as <b>Hit</b>, <b>Overlap</b>, or <b>Destruction</b> of the projectile object.</p>
@@ -205,11 +205,8 @@ image7.png</div></div>
 </table>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md132"></a>
 Case B. Request Explosion Hole</h2>
-<div class="image">
-<img src="image8.png" alt=""/>
-<div class="caption">
-image8.png</div></div>
-    <p>This node is used to simulate <b>spherical (radial) void areas</b> in smoke, typically caused by explosive devices like grenades, C4, or artillery shells.</p>
+<p><img src="HoleGeneratorComponent_image8.png" alt="HoleGeneratorComponent_image8.png" class="inline"/></p>
+<p>This node is used to simulate <b>spherical (radial) void areas</b> in smoke, typically caused by explosive devices like grenades, C4, or artillery shells.</p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md133"></a>
 <b>Execution Timing</b></h2>
 <p>Trigger this node at the moment the explosion is finalized. This is usually during events such as <b>Hit (OnComponentHit)</b>, <b>Overlap (OnComponentBeginOverlap)</b>, or when the projectile actor is <b>Destroyed</b>.</p>
@@ -227,11 +224,8 @@ image8.png</div></div>
 </table>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md134"></a>
 Case C. Request Dynamic Hole</h2>
-<div class="image">
-<img src="image9.png" alt=""/>
-<div class="caption">
-image9.png</div></div>
-    <p>Use this node when you need to <b>dynamically clear smoke or maintain a hole in real-time</b> based on the movement path of an object, such as a character or a vehicle.</p>
+<p><img src="HoleGeneratorComponent_image9.png" alt="HoleGeneratorComponent_image9.png" class="inline"/></p>
+<p>Use this node when you need to <b>dynamically clear smoke or maintain a hole in real-time</b> based on the movement path of an object, such as a character or a vehicle.</p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md135"></a>
 <b>Execution Timing</b></h2>
 <p>This node should be triggered by the <b><span class="tt">OnComponentBeginOverlap</span></b> event from the actor's <span class="tt">CollisionComponent</span>. Once triggered, the system will automatically track the actor and manage the smoke interaction.</p>
