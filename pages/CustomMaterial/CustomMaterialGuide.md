@@ -55,7 +55,7 @@ if (SmokeAlpha < LowOpacityRemapThreshold)
 
 ![CustomMaterial_image3.png](CustomMaterial_image3.png)
 
-[IVSmoke_Option_Material.gif](IVSmoke_Option_Material.gif)
+[IVSmoke_Option_Material.png](IVSmoke_Option_Material.png)
 
 ---
 
