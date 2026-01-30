@@ -1027,12 +1027,12 @@ WARN_LOGFILE           =
 # Note: If this tag is empty the current directory is searched.
 
 INPUT                  = ./IVSmoke/Source \
-                         ./docs/pages/QuickStartGuide/QuickStartGuide.md \
-                         ./docs/pages/CollisionComponent/CollisionComponentGuide.md \
-                         ./docs/pages/CustomMaterial/CustomMaterialGuide.md \
-                         ./docs/pages/GlobalSettings/GlobalSettingsGuide.md \
-                         ./docs/pages/HoleGeneratorComponent/HoleGeneratorComponentGuide.md \
-                         ./docs/pages/VoxelVolume/VoxelVolumeGuide.md \
+                         ./pages/QuickStartGuide/QuickStartGuide.md \
+                         ./pages/CollisionComponent/CollisionComponentGuide.md \
+                         ./pages/CustomMaterial/CustomMaterialGuide.md \
+                         ./pages/GlobalSettings/GlobalSettingsGuide.md \
+                         ./pages/HoleGeneratorComponent/HoleGeneratorComponentGuide.md \
+                         ./pages/VoxelVolume/VoxelVolumeGuide.md \
 
 # This tag can be used to specify the character encoding of the source files
 # that Doxygen parses. Internally Doxygen uses the UTF-8 encoding. Doxygen uses
@@ -1186,10 +1186,10 @@ EXAMPLE_RECURSIVE      = NO
 # that contain images that are to be included in the documentation (see the
 # \image command).
 
-IMAGE_PATH             = ./docs/pages/GlobalSettings \
-                         ./docs/pages/CustomMaterial \
-                         ./docs/pages/HoleGeneratorComponent \
-                         ./docs/pages/VoxelVolume
+IMAGE_PATH             = ./pages/GlobalSettings \
+                         ./pages/CustomMaterial \
+                         ./pages/HoleGeneratorComponent \
+                         ./pages/VoxelVolume
 
 # The INPUT_FILTER tag can be used to specify a program that Doxygen should
 # invoke to filter for each input file. Doxygen will invoke the filter program
@@ -1250,7 +1250,7 @@ FILTER_SOURCE_PATTERNS =
 # (index.html). This can be useful if you have a project on for instance GitHub
 # and want to reuse the introduction page also for the Doxygen output.
 
-USE_MDFILE_AS_MAINPAGE = ./docs/pages/QuickStartGuide/QuickStartGuide.md
+USE_MDFILE_AS_MAINPAGE = ./pages/QuickStartGuide/QuickStartGuide.md
 
 # If the IMPLICIT_DIR_DOCS tag is set to YES, any README.md file found in sub-
 # directories of the project's root, is used as the documentation for that sub-
@@ -1432,7 +1432,7 @@ GENERATE_HTML          = YES
 # The default directory is: html.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_OUTPUT            = html
+HTML_OUTPUT            = .
 
 # The HTML_FILE_EXTENSION tag can be used to specify the file extension for each
 # generated HTML page (for example: .htm, .php, .asp).
